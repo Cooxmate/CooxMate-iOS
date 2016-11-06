@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D148B80C1DCF7497003DEB34 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148B80B1DCF7497003DEB34 /* Model.swift */; };
+		D148B8101DCFAC4C003DEB34 /* CMStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148B80F1DCFAC4C003DEB34 /* CMStartViewController.swift */; };
+		D148B8121DCFADBF003DEB34 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148B8111DCFADBF003DEB34 /* UIConstants.swift */; };
+		D148B8141DCFAF40003DEB34 /* CMStartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148B8131DCFAF40003DEB34 /* CMStartTableViewCell.swift */; };
+		D16E58AA1DCF36A800B0E967 /* FetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E58A91DCF36A800B0E967 /* FetchManager.swift */; };
 		D17424501DCE72B500590B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D174244F1DCE72B500590B22 /* AppDelegate.swift */; };
-		D17424521DCE72B500590B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17424511DCE72B500590B22 /* ViewController.swift */; };
 		D17424651DCE72B500590B22 /* CooxmateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17424641DCE72B500590B22 /* CooxmateTests.swift */; };
 		D17424701DCE72B500590B22 /* CooxmateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D174246F1DCE72B500590B22 /* CooxmateUITests.swift */; };
 		D17424831DCE733A00590B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D174247E1DCE733A00590B22 /* Assets.xcassets */; };
@@ -41,9 +45,13 @@
 		17273F6B9B875FE96CB27B0B /* Pods-Cooxmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooxmate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cooxmate/Pods-Cooxmate.release.xcconfig"; sourceTree = "<group>"; };
 		87B90551314644B37E38A421 /* Pods-Cooxmate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooxmate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cooxmate/Pods-Cooxmate.debug.xcconfig"; sourceTree = "<group>"; };
 		BCC6569A3DED887CDF5D02DF /* Pods_Cooxmate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooxmate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D148B80B1DCF7497003DEB34 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D148B80F1DCFAC4C003DEB34 /* CMStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMStartViewController.swift; sourceTree = "<group>"; };
+		D148B8111DCFADBF003DEB34 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		D148B8131DCFAF40003DEB34 /* CMStartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMStartTableViewCell.swift; sourceTree = "<group>"; };
+		D16E58A91DCF36A800B0E967 /* FetchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchManager.swift; sourceTree = "<group>"; };
 		D174244C1DCE72B500590B22 /* Cooxmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooxmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174244F1DCE72B500590B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D17424511DCE72B500590B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D17424601DCE72B500590B22 /* CooxmateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CooxmateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17424641DCE72B500590B22 /* CooxmateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooxmateTests.swift; sourceTree = "<group>"; };
 		D17424661DCE72B500590B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +93,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D148B80A1DCF621F003DEB34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D148B80B1DCF7497003DEB34 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D148B80D1DCFAC00003DEB34 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D148B80E1DCFAC18003DEB34 /* StartViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D148B80E1DCFAC18003DEB34 /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D148B80F1DCFAC4C003DEB34 /* CMStartViewController.swift */,
+				D148B8131DCFAF40003DEB34 /* CMStartTableViewCell.swift */,
+			);
+			path = StartViewController;
+			sourceTree = "<group>";
+		};
 		D17424431DCE72B500590B22 = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +143,13 @@
 		D174244E1DCE72B500590B22 /* Cooxmate */ = {
 			isa = PBXGroup;
 			children = (
+				D148B80D1DCFAC00003DEB34 /* ViewControllers */,
+				D148B80A1DCF621F003DEB34 /* Model */,
 				D1A1FC8F1DCEAAD70001EA48 /* Constants */,
 				D174248A1DCE986F00590B22 /* Helpers */,
 				D17424871DCE737800590B22 /* PLists */,
 				D174247D1DCE733A00590B22 /* Resources */,
 				D174244F1DCE72B500590B22 /* AppDelegate.swift */,
-				D17424511DCE72B500590B22 /* ViewController.swift */,
 				D1A1FC8A1DCEA0580001EA48 /* Images.xcassets */,
 			);
 			path = Cooxmate;
@@ -177,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				D174248C1DCE989400590B22 /* APIManager.swift */,
+				D16E58A91DCF36A800B0E967 /* FetchManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -185,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				D1A1FC901DCEAAE70001EA48 /* APIConstant.swift */,
+				D148B8111DCFADBF003DEB34 /* UIConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -391,7 +427,11 @@
 			files = (
 				D1A1FC911DCEAAE70001EA48 /* APIConstant.swift in Sources */,
 				D174248D1DCE989400590B22 /* APIManager.swift in Sources */,
-				D17424521DCE72B500590B22 /* ViewController.swift in Sources */,
+				D16E58AA1DCF36A800B0E967 /* FetchManager.swift in Sources */,
+				D148B8121DCFADBF003DEB34 /* UIConstants.swift in Sources */,
+				D148B8101DCFAC4C003DEB34 /* CMStartViewController.swift in Sources */,
+				D148B80C1DCF7497003DEB34 /* Model.swift in Sources */,
+				D148B8141DCFAF40003DEB34 /* CMStartTableViewCell.swift in Sources */,
 				D17424501DCE72B500590B22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

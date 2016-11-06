@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'Cooxmate' do
-  pod 'Realm', '~> 1.1.0'
+  pod 'RealmSwift', '~> 1.1.0'
   pod 'Alamofire', '~> 3.3.1'
 end
 
