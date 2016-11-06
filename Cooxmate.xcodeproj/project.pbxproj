@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D17424501DCE72B500590B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D174244F1DCE72B500590B22 /* AppDelegate.swift */; };
+		D17424521DCE72B500590B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17424511DCE72B500590B22 /* ViewController.swift */; };
+		D17424651DCE72B500590B22 /* CooxmateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17424641DCE72B500590B22 /* CooxmateTests.swift */; };
+		D17424701DCE72B500590B22 /* CooxmateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D174246F1DCE72B500590B22 /* CooxmateUITests.swift */; };
+		D17424831DCE733A00590B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D174247E1DCE733A00590B22 /* Assets.xcassets */; };
+		D17424841DCE733A00590B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D174247F1DCE733A00590B22 /* Main.storyboard */; };
+		D174248D1DCE989400590B22 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D174248C1DCE989400590B22 /* APIManager.swift */; };
+		D1A1FC8B1DCEA0580001EA48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A1FC8A1DCEA0580001EA48 /* Images.xcassets */; };
+		D1A1FC8E1DCEA11E0001EA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A1FC8C1DCEA11E0001EA48 /* LaunchScreen.storyboard */; };
+		D1A1FC911DCEAAE70001EA48 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1FC901DCEAAE70001EA48 /* APIConstant.swift */; };
+		F2AE0C41B9ADC0DA3F7D7F57 /* Pods_Cooxmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC6569A3DED887CDF5D02DF /* Pods_Cooxmate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D17424611DCE72B500590B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17424441DCE72B500590B22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D174244B1DCE72B500590B22;
+			remoteInfo = Cooxmate;
+		};
+		D174246C1DCE72B500590B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17424441DCE72B500590B22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D174244B1DCE72B500590B22;
+			remoteInfo = Cooxmate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17273F6B9B875FE96CB27B0B /* Pods-Cooxmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooxmate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cooxmate/Pods-Cooxmate.release.xcconfig"; sourceTree = "<group>"; };
+		87B90551314644B37E38A421 /* Pods-Cooxmate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooxmate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cooxmate/Pods-Cooxmate.debug.xcconfig"; sourceTree = "<group>"; };
+		BCC6569A3DED887CDF5D02DF /* Pods_Cooxmate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooxmate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D174244C1DCE72B500590B22 /* Cooxmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooxmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D174244F1DCE72B500590B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D17424511DCE72B500590B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D17424601DCE72B500590B22 /* CooxmateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CooxmateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17424641DCE72B500590B22 /* CooxmateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooxmateTests.swift; sourceTree = "<group>"; };
+		D17424661DCE72B500590B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D174246B1DCE72B500590B22 /* CooxmateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CooxmateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D174246F1DCE72B500590B22 /* CooxmateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooxmateUITests.swift; sourceTree = "<group>"; };
+		D17424711DCE72B500590B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D174247E1DCE733A00590B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D17424801DCE733A00590B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D17424881DCE73B000590B22 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PLists/Info.plist; sourceTree = "<group>"; };
+		D174248C1DCE989400590B22 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D1A1FC8A1DCEA0580001EA48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1A1FC8D1DCEA11E0001EA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1A1FC901DCEAAE70001EA48 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D17424491DCE72B500590B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AE0C41B9ADC0DA3F7D7F57 /* Pods_Cooxmate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D174245D1DCE72B500590B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17424681DCE72B500590B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D17424431DCE72B500590B22 = {
+			isa = PBXGroup;
+			children = (
+				D174244E1DCE72B500590B22 /* Cooxmate */,
+				D17424631DCE72B500590B22 /* CooxmateTests */,
+				D174246E1DCE72B500590B22 /* CooxmateUITests */,
+				D174244D1DCE72B500590B22 /* Products */,
+				FAD2D6C3C8F4C742C0476CEA /* Pods */,
+				F0EC005EE5C8D5FFEF323032 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D174244D1DCE72B500590B22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D174244C1DCE72B500590B22 /* Cooxmate.app */,
+				D17424601DCE72B500590B22 /* CooxmateTests.xctest */,
+				D174246B1DCE72B500590B22 /* CooxmateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D174244E1DCE72B500590B22 /* Cooxmate */ = {
+			isa = PBXGroup;
+			children = (
+				D1A1FC8F1DCEAAD70001EA48 /* Constants */,
+				D174248A1DCE986F00590B22 /* Helpers */,
+				D17424871DCE737800590B22 /* PLists */,
+				D174247D1DCE733A00590B22 /* Resources */,
+				D174244F1DCE72B500590B22 /* AppDelegate.swift */,
+				D17424511DCE72B500590B22 /* ViewController.swift */,
+				D1A1FC8A1DCEA0580001EA48 /* Images.xcassets */,
+			);
+			path = Cooxmate;
+			sourceTree = "<group>";
+		};
+		D17424631DCE72B500590B22 /* CooxmateTests */ = {
+			isa = PBXGroup;
+			children = (
+				D17424641DCE72B500590B22 /* CooxmateTests.swift */,
+				D17424661DCE72B500590B22 /* Info.plist */,
+			);
+			path = CooxmateTests;
+			sourceTree = "<group>";
+		};
+		D174246E1DCE72B500590B22 /* CooxmateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D174246F1DCE72B500590B22 /* CooxmateUITests.swift */,
+				D17424711DCE72B500590B22 /* Info.plist */,
+			);
+			path = CooxmateUITests;
+			sourceTree = "<group>";
+		};
+		D174247D1DCE733A00590B22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D17424861DCE736000590B22 /* Storyboards */,
+				D174247E1DCE733A00590B22 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D17424861DCE736000590B22 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D174247F1DCE733A00590B22 /* Main.storyboard */,
+				D1A1FC8C1DCEA11E0001EA48 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D17424871DCE737800590B22 /* PLists */ = {
+			isa = PBXGroup;
+			children = (
+				D17424881DCE73B000590B22 /* Info.plist */,
+			);
+			name = PLists;
+			sourceTree = "<group>";
+		};
+		D174248A1DCE986F00590B22 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D174248B1DCE988A00590B22 /* Managers */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D174248B1DCE988A00590B22 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D174248C1DCE989400590B22 /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D1A1FC8F1DCEAAD70001EA48 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D1A1FC901DCEAAE70001EA48 /* APIConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F0EC005EE5C8D5FFEF323032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6569A3DED887CDF5D02DF /* Pods_Cooxmate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD2D6C3C8F4C742C0476CEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87B90551314644B37E38A421 /* Pods-Cooxmate.debug.xcconfig */,
+				17273F6B9B875FE96CB27B0B /* Pods-Cooxmate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D174244B1DCE72B500590B22 /* Cooxmate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17424741DCE72B500590B22 /* Build configuration list for PBXNativeTarget "Cooxmate" */;
+			buildPhases = (
+				8029CE261866D9D384E34EA9 /* [CP] Check Pods Manifest.lock */,
+				D17424481DCE72B500590B22 /* Sources */,
+				D17424491DCE72B500590B22 /* Frameworks */,
+				D174244A1DCE72B500590B22 /* Resources */,
+				44C65BB1F0882E48AD32DA44 /* [CP] Embed Pods Frameworks */,
+				7069E44B727D77C3E9AC8900 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cooxmate;
+			productName = Cooxmate;
+			productReference = D174244C1DCE72B500590B22 /* Cooxmate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D174245F1DCE72B500590B22 /* CooxmateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17424771DCE72B500590B22 /* Build configuration list for PBXNativeTarget "CooxmateTests" */;
+			buildPhases = (
+				D174245C1DCE72B500590B22 /* Sources */,
+				D174245D1DCE72B500590B22 /* Frameworks */,
+				D174245E1DCE72B500590B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D17424621DCE72B500590B22 /* PBXTargetDependency */,
+			);
+			name = CooxmateTests;
+			productName = CooxmateTests;
+			productReference = D17424601DCE72B500590B22 /* CooxmateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D174246A1DCE72B500590B22 /* CooxmateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D174247A1DCE72B500590B22 /* Build configuration list for PBXNativeTarget "CooxmateUITests" */;
+			buildPhases = (
+				D17424671DCE72B500590B22 /* Sources */,
+				D17424681DCE72B500590B22 /* Frameworks */,
+				D17424691DCE72B500590B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D174246D1DCE72B500590B22 /* PBXTargetDependency */,
+			);
+			name = CooxmateUITests;
+			productName = CooxmateUITests;
+			productReference = D174246B1DCE72B500590B22 /* CooxmateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D17424441DCE72B500590B22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Panajotis Maroungas";
+				TargetAttributes = {
+					D174244B1DCE72B500590B22 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D174245F1DCE72B500590B22 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D174244B1DCE72B500590B22;
+					};
+					D174246A1DCE72B500590B22 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D174244B1DCE72B500590B22;
+					};
+				};
+			};
+			buildConfigurationList = D17424471DCE72B500590B22 /* Build configuration list for PBXProject "Cooxmate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D17424431DCE72B500590B22;
+			productRefGroup = D174244D1DCE72B500590B22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D174244B1DCE72B500590B22 /* Cooxmate */,
+				D174245F1DCE72B500590B22 /* CooxmateTests */,
+				D174246A1DCE72B500590B22 /* CooxmateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D174244A1DCE72B500590B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A1FC8B1DCEA0580001EA48 /* Images.xcassets in Resources */,
+				D17424831DCE733A00590B22 /* Assets.xcassets in Resources */,
+				D1A1FC8E1DCEA11E0001EA48 /* LaunchScreen.storyboard in Resources */,
+				D17424841DCE733A00590B22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D174245E1DCE72B500590B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17424691DCE72B500590B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44C65BB1F0882E48AD32DA44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cooxmate/Pods-Cooxmate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7069E44B727D77C3E9AC8900 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cooxmate/Pods-Cooxmate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8029CE261866D9D384E34EA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D17424481DCE72B500590B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A1FC911DCEAAE70001EA48 /* APIConstant.swift in Sources */,
+				D174248D1DCE989400590B22 /* APIManager.swift in Sources */,
+				D17424521DCE72B500590B22 /* ViewController.swift in Sources */,
+				D17424501DCE72B500590B22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D174245C1DCE72B500590B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17424651DCE72B500590B22 /* CooxmateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17424671DCE72B500590B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17424701DCE72B500590B22 /* CooxmateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D17424621DCE72B500590B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D174244B1DCE72B500590B22 /* Cooxmate */;
+			targetProxy = D17424611DCE72B500590B22 /* PBXContainerItemProxy */;
+		};
+		D174246D1DCE72B500590B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D174244B1DCE72B500590B22 /* Cooxmate */;
+			targetProxy = D174246C1DCE72B500590B22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D174247F1DCE733A00590B22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D17424801DCE733A00590B22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1A1FC8C1DCEA11E0001EA48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1A1FC8D1DCEA11E0001EA48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D17424721DCE72B500590B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D17424731DCE72B500590B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D17424751DCE72B500590B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B90551314644B37E38A421 /* Pods-Cooxmate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Cooxmate/PLists/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.panajotis.maroungas.Cooxmate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D17424761DCE72B500590B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17273F6B9B875FE96CB27B0B /* Pods-Cooxmate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Cooxmate/PLists/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.panajotis.maroungas.Cooxmate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D17424781DCE72B500590B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CooxmateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panajotis.maroungas.CooxmateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cooxmate.app/Cooxmate";
+			};
+			name = Debug;
+		};
+		D17424791DCE72B500590B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CooxmateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panajotis.maroungas.CooxmateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cooxmate.app/Cooxmate";
+			};
+			name = Release;
+		};
+		D174247B1DCE72B500590B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CooxmateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panajotis.maroungas.CooxmateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cooxmate;
+			};
+			name = Debug;
+		};
+		D174247C1DCE72B500590B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CooxmateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panajotis.maroungas.CooxmateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cooxmate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D17424471DCE72B500590B22 /* Build configuration list for PBXProject "Cooxmate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17424721DCE72B500590B22 /* Debug */,
+				D17424731DCE72B500590B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17424741DCE72B500590B22 /* Build configuration list for PBXNativeTarget "Cooxmate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17424751DCE72B500590B22 /* Debug */,
+				D17424761DCE72B500590B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17424771DCE72B500590B22 /* Build configuration list for PBXNativeTarget "CooxmateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17424781DCE72B500590B22 /* Debug */,
+				D17424791DCE72B500590B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D174247A1DCE72B500590B22 /* Build configuration list for PBXNativeTarget "CooxmateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D174247B1DCE72B500590B22 /* Debug */,
+				D174247C1DCE72B500590B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D17424441DCE72B500590B22 /* Project object */;
+}
