@@ -15,49 +15,50 @@ struct APIManager {
 
 		// MARK: - Properties
 
-		private var method		: Alamofire.Method
-		private var urlAsString	: String
-		private var parameters	: [String : AnyObject]
+		var url			: URL?
+
+		// MARK: - Properties
+
+		var method		: Alamofire.HTTPMethod
+		var parameters	: [String : AnyObject]
 
 		// MARK: - Initiliazers
 
-		init(method: Alamofire.Method, url: String, parameters: [String : AnyObject]? = nil) {
-			guard let baseURL = NSURL(string: APIConstant.baseURL) else {
+		init(method: Alamofire.HTTPMethod, urlPath: String, parameters: [String : AnyObject]? = nil) {
+			guard let baseURL = URL(string: APIConstant.baseURL) else {
 				self.method 		= method
-				self.urlAsString 	= ""
 				self.parameters 	= parameters ?? [:]
 				return
 			}
 
-			let completeURL 	= baseURL.URLByAppendingPathComponent(url)
+			self.url		 	= baseURL.appendingPathExtension(urlPath)
 			self.method 		= method
-			self.urlAsString 	= completeURL.absoluteString
 			self.parameters 	= parameters ?? [:]
 		}
-
 	}
 
 	static func URLWithPath(path: String, withParameters parameters: [String: AnyObject]?) -> NSURL? {
 		guard let baseUrl =	NSURL(string: APIConstant.baseURL) else {
 			return nil
 		}
-		return baseUrl.URLByAppendingPathComponent(path)
+		return baseUrl.appendingPathComponent(path) as NSURL?
 	}
 
-	static func sendRequest(requestData: RequestData, completion: ((dictionary: [String: AnyObject]?, error: NSError?) -> Void)?) {
-		guard (requestData.urlAsString.isEmpty == false) else {
-			completion?(dictionary: nil, error: NSError(domain: "Empty url", code: 0, userInfo: nil))
+	static func sendRequest(requestData: RequestData, completion: ((_ dictionary: [String: AnyObject]?, _ error: Error?) -> Void)?) {
+		guard let _url = requestData.url,
+			(_url.absoluteString.isEmpty == false) else {
+			completion?(nil, NSError(domain: "Empty url", code: 0, userInfo: nil))
 			return
 		}
 
-		let request = Alamofire.request(requestData.method, requestData.urlAsString, parameters: requestData.parameters, headers: nil)
+		let request = Alamofire.request(_url, method: requestData.method, parameters: requestData.parameters, encoding: URLEncoding.default, headers: nil)
 
-		request.responseJSON { (response: Response) in
+		request.responseJSON { (response: DataResponse) in
 			guard let dictionary = response.result.value as? [String: AnyObject] else {
-				completion?(dictionary: nil, error: response.result.error)
+				completion?(nil, response.result.error)
 				return
 			}
-			completion?(dictionary: dictionary, error: nil)
+			completion?(dictionary, nil)
 		}
 	}
 

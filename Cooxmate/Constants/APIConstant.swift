@@ -34,7 +34,7 @@ struct APIConstant {
 		static let TimePreperation		= "time_preparation"
 		static let Timestamp			= "timestamp"
 		static let Title				= "title"
-		static let Type					= "type"
+		static let RecipeType			= "type"
 	}
 
 	enum RecipeModel			: String {

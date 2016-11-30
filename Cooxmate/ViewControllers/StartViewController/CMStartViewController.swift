@@ -16,12 +16,12 @@ class CMStartViewController						: UIViewController {
 
 	// MARK: - Properties
 
-	private var recipes = [Recipe]()
+	internal var recipes = [Recipe]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		FetchManager.fetchInitRequest(0, to: 10) { [weak self] (recipes: [Recipe]?, error: NSError?) in
+		FetchManager.fetchInitRequest(from: 0, to: 10) { [weak self] (recipes: [Recipe]?, error: NSError?) in
 			if let recipes = recipes {
 				self?.recipes = recipes
 				self?.recipeTableView?.reloadData()
@@ -33,19 +33,19 @@ class CMStartViewController						: UIViewController {
 
 extension CMStartViewController					: UITableViewDelegate, UITableViewDataSource {
 
-	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return (self.recipes.count ?? 0)
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return (self.recipes.count)
 	}
 
-	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return UIConstant.CellIdentifier.CMStartIdentifer.cellHeight()
 	}
 
-	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		guard let cell = tableView.dequeueReusableCellWithIdentifier(UIConstant.CellIdentifier.CMStartIdentifer.rawValue) as? CMStartTableViewCell else {
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: UIConstant.CellIdentifier.CMStartIdentifer.rawValue) as? CMStartTableViewCell else {
 			return UITableViewCell()
 		}
-		cell.setContent(self.recipes[indexPath.row])
+		cell.setContent(recipe: self.recipes[indexPath.row])
 		return cell
 	}
 }

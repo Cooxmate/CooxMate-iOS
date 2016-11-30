@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'Cooxmate' do
   pod 'RealmSwift', '~> 1.1.0'
-  pod 'Alamofire', '~> 3.3.1'
+  pod 'Alamofire', ~> 4.0.1'
 end
 
 post_install do |installer|
