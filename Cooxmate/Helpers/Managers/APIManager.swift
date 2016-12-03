@@ -31,9 +31,10 @@ struct APIManager {
 				return
 			}
 
-			self.url		 	= baseURL.appendingPathExtension(urlPath)
 			self.method 		= method
 			self.parameters 	= parameters ?? [:]
+			self.url 			= baseURL
+			self.url?.appendPathComponent(urlPath)
 		}
 	}
 

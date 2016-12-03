@@ -17,10 +17,10 @@ struct FetchManager {
 	static func fetchInitRequest(from: Int, to: Int, completion: ((_ recipes: [Recipe]?, _ error: NSError?) -> Void)?) {
 
 		let initRequest = APIConstant.PathURL.Init.rawValue
-		var parameters: [String: AnyObject]?
+		var parameters = [String: AnyObject]()
 
-		parameters?[APIConstant.InitReuqestParameter.From] = from as AnyObject?
-		parameters?[APIConstant.InitReuqestParameter.To] = to as AnyObject?
+		parameters[APIConstant.InitReuqestParameter.From] = from as AnyObject?
+		parameters[APIConstant.InitReuqestParameter.To] = to as AnyObject?
 
 		let requestData = APIManager.RequestData(method: .get, urlPath: initRequest, parameters: parameters)
 
