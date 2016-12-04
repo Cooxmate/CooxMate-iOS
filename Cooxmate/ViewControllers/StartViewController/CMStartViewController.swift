@@ -18,8 +18,12 @@ class CMStartViewController						: UIViewController {
 
 	internal var recipes = [Recipe]()
 
+	// MARK: - View Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+		self.recipeTableView?.estimatedRowHeight = UIConstant.CellIdentifier.CMStartIdentifer.cellHeight()
 
 		FetchManager.fetchInitRequest(from: 0, to: 10) { [weak self] (recipes: [Recipe]?, error: NSError?) in
 			if let recipes = recipes {
@@ -27,18 +31,28 @@ class CMStartViewController						: UIViewController {
 				self?.recipeTableView?.reloadData()
 			}
 		}
-
     }
+
+	// MARK: - Navigation
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender)
+		
+		if
+			let overviewViewcontroller = segue.destination as? CMRecipeOverviewViewController,
+			let recipe = sender as? Recipe,
+			(segue.identifier == UIConstant.SegueIdentifier.PresentOverView.rawValue) {
+				overviewViewcontroller.recipe = recipe
+		}
+	}
 }
+
+// MARK: - UITableview Delegate
 
 extension CMStartViewController					: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return (self.recipes.count)
-	}
-
-	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return UIConstant.CellIdentifier.CMStartIdentifer.cellHeight()
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,5 +61,9 @@ extension CMStartViewController					: UITableViewDelegate, UITableViewDataSource
 		}
 		cell.setContent(recipe: self.recipes[indexPath.row])
 		return cell
+	}
+
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		self.performSegue(withIdentifier: UIConstant.SegueIdentifier.PresentOverView.rawValue, sender: self.recipes[indexPath.row])
 	}
 }

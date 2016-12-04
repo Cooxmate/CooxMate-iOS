@@ -19,4 +19,8 @@ struct UIConstant {
 			}
 		}
 	}
+
+	enum SegueIdentifier		: String {
+		case PresentOverView 	= "presentOverViewIdentifier"
+	}
 }
